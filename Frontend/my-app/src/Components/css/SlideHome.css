@@ -1,0 +1,141 @@
+.coverbg {
+    position: relative; /* Tạo một stacking context mới */
+    width: 100%; /* Đảm bảo chiều rộng phù hợp */
+    height: 480px; /* Đảm bảo chiều cao phù hợp */
+}
+
+.backgroundimg
+{
+    position: absolute;
+    
+    width: 100%;
+    height: 480px;
+    max-width: 100%;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.colorbg
+{
+    position: absolute;
+    z-index: 1;
+    background-color: wheat;
+    height: 480px;
+    width: 71%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    top:0;
+    bottom: 0;
+}
+
+
+.mainbg
+{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    top:0;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+.mainimgleft
+{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    margin-left: auto;
+    right: 360px;
+    margin-right: auto;
+    margin-top: auto;
+    top:0;
+    bottom: 0;
+    margin-bottom: auto;
+    height:480px;
+}
+.mainimgright
+{
+    position: absolute;
+    z-index: 2;
+    left: 782px;
+    right: 0;
+    margin: auto;
+    top:0;
+    bottom: 205px;
+    height: 42.5%;
+}
+.mainimgright2
+{
+    height: 46%;
+    position: absolute;
+    z-index: 2;
+    left: 815px;
+    right: 0;
+    margin: auto;
+    top: 182px;
+    bottom: 0;
+    
+
+}
+.dots {
+    
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    z-index: 3;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #837f7f;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    /* border-color: rgb(126, 47, 47); */
+    /* border: 1px solid; */
+}
+
+.dot .active
+{
+    background-color: aliceblue;
+}
+
+.slidercontainer
+{
+    display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* .slide {
+    min-width: 100%;
+    transition: opacity 0.5s linear;
+    
+    opacity: 0;
+  }
+
+  .slide.active {
+    opacity: 1;
+  } */
+  .slide--fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s linear
+ }
+ 
+ .slide--fade-in {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s linear 0.5s
+ }
