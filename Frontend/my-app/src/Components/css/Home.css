@@ -1,0 +1,80 @@
+.weekcontainer
+{
+    position:absolute;
+    margin: 0;
+    left:0;
+    right: 0;
+    height: 60px;
+    border-bottom: 1px ridge ;
+    z-index:1;
+    background-color: aliceblue;
+}
+.weeklist
+{
+    cursor: pointer;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 300px;
+    margin-right:300px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    padding:0;
+    font-size: larger;
+    font-weight: 600;
+}
+.weeklist-hover:hover{
+    color: #00DC64;
+}
+.weeklist-unselected, .weeklist-hover
+{
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    
+}
+.weeklist-selected
+{
+    background-color: #00DC64;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    color: aliceblue;
+}
+.bodyContainer{
+    background-color: rgb(196, 190, 190);
+    border-bottom: 1px ridge ;
+    padding-bottom: 20px;
+}
+.smallComicBoxList{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.smallComicBoxList:first-child{
+    padding-top: 80px;
+
+}
+
+.listContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+    margin-top: 30px;
+}

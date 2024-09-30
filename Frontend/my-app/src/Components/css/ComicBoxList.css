@@ -1,0 +1,18 @@
+.imgListBox{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.gridListBoxContainer{
+    display:grid;
+    grid-template-columns: min-content min-content max-content;
+    grid-template-rows: auto;
+    width: 580px;
+    /* background-color: aqua; */
+}
+.gridListContent{
+    text-align: left;
+    margin-left: 10px;
+    display:grid;
+}
